@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "eslint ./src",
     "test": "NODE_ENV=unittest mocha --opts test/mocha.opts",
-    "coverage": "export NODE_ENV=unittest && nyc mocha --opts test/mocha.opts"
+    "coverage": "export NODE_ENV=unittest && nyc mocha --opts test/mocha.opts",
+    "report": "nyc --reporter=html --reporter=text mocha --opts test/mocha.opts"
   },
   "repository": {
     "type": "git",

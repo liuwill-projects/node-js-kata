@@ -7,7 +7,9 @@
   },
   "globals": {
     "config": true,
-    "tracer": true
+    "tracer": true,
+    "it": true,
+    "describe": true,
   },
   "rules": {
     "no-param-reassign": 0,
