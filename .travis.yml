@@ -4,7 +4,9 @@ node_js:
 install:
   - yarn install
 script:
-  - yarn test:ci
+  - yarn run lint
+  - yarn run coverage
+  - yarn run test:ci
 after_script:
   - yarn global add coveralls
   - coveralls < ./coverage/lcov.info
