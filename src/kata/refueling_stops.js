@@ -60,7 +60,7 @@ var minRefuelStops = function(target, startFuel, stations) {
   }
 
   return minStops
-};
+}
 
 module.exports = {
   minRefuelStops
