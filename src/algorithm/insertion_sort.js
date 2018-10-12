@@ -26,3 +26,19 @@ export const insertSort = (raw) => {
   })
   return list
 }
+
+export const insertSortDynamic = (raw) => {
+  const list = []
+  for (const val of raw) {
+    let pos = list.length
+    for (let i = pos; i > 0; i--) {
+      if (list[i - 1] <= val) {
+        break
+      }
+      list[i] = list[i-1]
+      pos--
+    }
+    list[pos] = val
+  }
+  return list
+}
