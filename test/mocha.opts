@@ -1,8 +1,8 @@
 --silly
 --full-trace
 --timeout 20000
---compilers js:babel-core/register
+--require @babel/register
 --recursive
---require babel-polyfill
+--exit
 test/unit
 
