@@ -16,7 +16,7 @@ const insertItem = (list, val) => {
   let front = list.slice(0, pos)
   let end = list.slice(pos)
   front[pos] = val
-  return  front.concat(end)
+  return front.concat(end)
 }
 
 export const insertSort = (raw) => {
@@ -35,7 +35,7 @@ export const insertSortDynamic = (raw) => {
       if (list[i - 1] <= val) {
         break
       }
-      list[i] = list[i-1]
+      list[i] = list[i - 1]
       pos--
     }
     list[pos] = val
